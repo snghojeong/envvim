@@ -1,3 +1,25 @@
+colorscheme desert
+set nowrap
+set ignorecase
+set nohlsearch
+
 "hot key - function key
+map <F2> :tabnew<CR>
+map <F3> :tabprev<CR>
+map <F4> :tabnext<CR>
 map <F12> :NERDTree <CR>
 
+"FuzzyFinder
+filetype plugin on
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+map <leader>ff :FufFile **/<CR>
+
+"cscope
+nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>f :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>i :cs find i <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
