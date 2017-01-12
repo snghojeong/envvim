@@ -5,6 +5,12 @@ colorscheme desert
 set nowrap
 set ignorecase
 set nohlsearch
+set number
+
+"Auto indent
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 "hot key - function key
 map <F2> :tabnew<CR>
