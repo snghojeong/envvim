@@ -21,14 +21,9 @@ map <F12> :NERDTree <CR>
 "Vundle
 set rtp+=~/.vim/bundle/vundle/
 
-call vundle#begin()
-Plugin 'VundleVim/vundle'
-
-"Vundle plugins
-Plugin 'pathogen/pathogen.vim'
-Plugin 'surround/surround.vim'
-
-call vundle#end()
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on
 
