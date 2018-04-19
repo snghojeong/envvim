@@ -23,8 +23,7 @@ map <F12> :NERDTree <CR>
 set rtp+=~/.vim/bundle/vundle/
 
 call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
 
