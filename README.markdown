@@ -5,6 +5,8 @@ This is a simple vim environment to develop C/C++ software.
 
 ![screenshot](https://camo.githubusercontent.com/1f3f922431d5363224b20e99467ff28b04e810e2/687474703a2f2f692e696d6775722e636f6d2f304f50346f6f642e676966)
 
+This image is screenshot of [YouCompleteMe](https://github.com/Valloric/YouCompleteMe).
+
 Plugin list
 ------------
 
