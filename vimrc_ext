@@ -18,6 +18,8 @@ map <F2> :tabnew<CR>
 map <F3> :tabprev<CR>
 map <F4> :tabnext<CR>
 map <F9> :NERDTree <CR>
+nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 
 "Vundle
 set rtp+=~/.vim/bundle/vundle/
