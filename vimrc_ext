@@ -17,7 +17,7 @@ set softtabstop=2
 map <F2> :tabnew<CR>
 map <F3> :tabprev<CR>
 map <F4> :tabnext<CR>
-map <F12> :NERDTree <CR>
+map <F9> :NERDTree <CR>
 
 "Vundle
 set rtp+=~/.vim/bundle/vundle/
