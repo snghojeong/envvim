@@ -1,6 +1,9 @@
 set nocompatible
 filetype off
 syntax on
+if filereadable("cscope.out")
+  cs add cscope.out
+endif
 
 colorscheme desert
 set nowrap
@@ -18,6 +21,7 @@ map <F2> :tabnew<CR>
 map <F3> :tabprev<CR>
 map <F4> :tabnext<CR>
 map <F9> :NERDTree <CR>
+map <F5> :call ReloadSyms() <CR>
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 
@@ -43,3 +47,9 @@ nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>f :cs find f <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>i :cs find i <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+function ReloadSyms()
+  cs reset
+  !ctags -R
+  !cscope -R -b
+endfunction
