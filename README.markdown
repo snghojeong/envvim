@@ -87,6 +87,14 @@ Type the file name that you need and then plugin will shows candidates.
 The most fascinating feature is that the plugin utilize fuzzy algorithm to search file name.
 By doing so, you can pick the file even if you have some mistake to type file name.
 
+My favorites 4. Surround
+------------
+
+All the time I code some software, I must use some kind of surrounding syntax. ex) "", '', (), {} and so on.
+If I already type contents and I need to surround them, in vim it is quite annoying job. Type " and move to end, and type" again...
+In this case, I just use Surround plugin! You just block the content that you want to surround, 
+and then type 'S+"', after typing you can show that your content already surrounded by ".
+
 License
 -------
 
