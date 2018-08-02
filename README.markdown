@@ -95,6 +95,15 @@ If I already type contents and I need to surround them, in vim it is quite annoy
 In this case, I just use Surround plugin! You just block the content that you want to surround, 
 and then type 'S+"', after typing you can show that your content already surrounded by ".
 
+My favorites 5. NERDTree
+------------
+
+All IDE have their file browser to search file and to understand directory structure easily.
+In my vim plugin, I have the plugin that provides saem function as IDE file browser.
+The name of the plugin is NERDTree.
+I configure F9 as shorcut of NERDTree, so you can use it just by typing F9.
+Try!
+
 License
 -------
 
