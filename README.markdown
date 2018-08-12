@@ -104,6 +104,16 @@ The name of the plugin is NERDTree.
 I configure F9 as shorcut of NERDTree, so you can use it just by typing F9.
 Try!
 
+My favorites 6. Go to the definition or the declaration of symbol
+------------
+
+I use cscope to move my cursor on the definition or the declaration of symbol.
+Especially I made my shortcut for this command.
+Try "Ctrl + \\ + c" to search the location that the function is called.
+Try "Ctrl + \\ + s" to search all the location of the symbol.
+Try "Ctrl + ]" to move the definition of the symbol.
+Try "Ctrl + t" to move the previous location.
+
 License
 -------
 
