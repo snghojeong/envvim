@@ -13,8 +13,8 @@ set number
 
 "Auto indent
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 "hot key - function key
 map <F2> :tabnew<CR>
