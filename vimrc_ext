@@ -20,9 +20,9 @@ set softtabstop=4
 map <F2> :tabnew<CR>
 map <F3> :tabprev<CR>
 map <F4> :tabnext<CR>
-map <F9> :NERDTree <CR>
-map <F10> :TlistToggle <CR>
 map <F5> :call ReloadSyms() <CR>
+nnoremap <silent> <F9> :NERDTreeFind <CR>
+map <F10> :TlistToggle <CR>
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 
@@ -34,6 +34,12 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'taglist.vim'
 
 filetype plugin indent on
+
+"NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeQuitOnOpen = 1
+let NERDTreeAutoDeleteBuffer = 1
 
 "FuzzyFinder
 filetype plugin on
@@ -57,4 +63,4 @@ function ReloadSyms()
 endfunction
 
 "taglist
-let Tlist_Use_Right_Window = 1
+"let Tlist_Use_Right_Window = 1
