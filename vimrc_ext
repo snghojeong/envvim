@@ -4,6 +4,12 @@ syntax on
 if filereadable("cscope.out")
   cs add cscope.out
 endif
+if filereadable("vim.build/cscope.out")
+  cs add vim.build/cscope.out
+endif
+if filereadable("vim.build/tags")
+  set tags=vim.build/tags
+endif
 
 colorscheme desert
 set nowrap
@@ -30,8 +36,10 @@ nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 set rtp+=~/.vim/bundle/vundle/
 
 call vundle#rc()
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'taglist.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'taglist.vim'
+Plugin 'gilligan/vim-lldb'
+call vundle#end()
 
 filetype plugin indent on
 
