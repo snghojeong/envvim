@@ -38,7 +38,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'taglist.vim'
-Plugin 'gilligan/vim-lldb'
 call vundle#end()
 
 filetype plugin indent on
