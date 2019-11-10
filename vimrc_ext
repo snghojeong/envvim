@@ -36,6 +36,7 @@ nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 set rtp+=~/.vim/bundle/vundle/
 
 call vundle#rc()
+Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'taglist.vim'
 Plugin 'junegunn/fzf'
@@ -52,7 +53,7 @@ let NERDTreeAutoDeleteBuffer = 1
 "FuzzyFinder
 filetype plugin on
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
-map <leader>ff :FufFile **/<CR>
+map <leader>fs :FufFile **/<CR>
 
 "cscope
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
