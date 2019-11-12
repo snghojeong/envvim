@@ -11,6 +11,16 @@ if filereadable("vim.build/tags")
   set tags=vim.build/tags
 endif
 
+"Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'taglist.vim'
+Plugin 'junegunn/fzf'
+call vundle#end()
+
 colorscheme desert
 set nowrap
 set ignorecase
@@ -31,16 +41,6 @@ nnoremap <silent> <F9> :NERDTreeFind <CR>
 map <F10> :TlistToggle <CR>
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
-
-"Vundle
-set rtp+=~/.vim/bundle/vundle/
-
-call vundle#rc()
-Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'taglist.vim'
-Plugin 'junegunn/fzf'
-call vundle#end()
 
 filetype plugin indent on
 
