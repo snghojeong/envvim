@@ -55,6 +55,7 @@ filetype plugin on
 map <leader>fs :FZF<CR>
 
 "cscope
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
