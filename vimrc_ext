@@ -11,6 +11,10 @@ if filereadable("vim.build/tags")
   set tags=vim.build/tags
 endif
 
+"fold
+set foldmethod=syntax
+set foldnestmax=1
+
 "Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
