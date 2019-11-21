@@ -40,7 +40,6 @@ set softtabstop=4
 map <F2> :tabnew<CR>
 map <F3> :tabprev<CR>
 map <F4> :tabnext<CR>
-map <F5> :call ReloadSyms() <CR>
 nnoremap <silent> <F9> :NERDTreeFind <CR>
 map <F10> :TlistToggle <CR>
 nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
