@@ -74,3 +74,8 @@ nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > vim.build/cscope.files
 "cscope -q -R -b -i ./vim.build/cscope.files
 "mv cscope.* vim.build/
+"
+"di)
+"va]
+".
+"C-F, C-B
