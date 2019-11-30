@@ -23,6 +23,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'taglist.vim'
 Plugin 'junegunn/fzf'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 
 colorscheme desert
