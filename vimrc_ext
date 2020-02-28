@@ -59,7 +59,7 @@ let NERDTreeAutoDeleteBuffer = 1
 
 "FZF
 filetype plugin on
-map <leader>fs :FZF<CR>
+map <leader>ff :FZF<CR>
 
 "cscope
 set cscopequickfix=s-,c-,d-,i-,t-,e-
