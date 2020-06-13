@@ -83,4 +83,3 @@ nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "di)
 "va]
 ".
-"C-F, C-B
