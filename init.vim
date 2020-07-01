@@ -22,8 +22,9 @@ Plug 'junegunn/fzf'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
-Plug 'taglist.vim'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'tpope/vim-surround'
+Plug 'vim-scripts/taglist.vim'
 call plug#end()
 
 colorscheme desert
