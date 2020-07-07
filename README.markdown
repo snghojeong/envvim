@@ -45,7 +45,8 @@ Fallow this instructions:
 
 And when you use cmake to build makefile, give -DCMAKE\_EXPORT\_COMPILE\_COMMANDS=ON option to make compile\_commands.json.
 
-Prerequisites for CoC
+Prerequisites for CoC:
+
     Install node.js
     Install yarn
     Install clangd (Mac: brew install llvm)
