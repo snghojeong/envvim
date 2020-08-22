@@ -8,8 +8,6 @@ Plugin list
 
 [NERDTree](https://github.com/scrooloose/nerdtree)
 
-[FuzzyFinder](https://github.com/vim-scripts/FuzzyFinder)
-
 [surround.vim](https://github.com/tpope/vim-surround)
 
 Dependencies
