@@ -10,6 +10,8 @@ Plugin list
 
 [surround.vim](https://github.com/tpope/vim-surround)
 
+FZF
+
 Dependencies
 ------------
 
