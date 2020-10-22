@@ -79,11 +79,11 @@ After you block your text, you can modify your contents by followings:
   u: turn into lower case.
   x: cut the contents.
 
-My favorites 3. FuzzyFinder (Find file...)
+My favorites 3. FZF (Find file...)
 ------------
 
 Almost of IDE support "Find file" function that open source file that you need.
-My vim environment also provides the find tool using interesting plugin named "FuzzyFinder".
+My vim environment also provides the find tool using interesting plugin named "FZF".
 If you want to find some file, just press '\ff' and you can show the list of files.
 Type the file name that you need and then plugin will shows candidates.
 The most fascinating feature is that the plugin utilize fuzzy algorithm to search file name.
