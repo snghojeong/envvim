@@ -119,5 +119,5 @@ Try "Ctrl + t" to move the previous tag location.
 License
 -------
 
-Copyright (c) snghojeong.  Distributed under the same terms as Vim itself.
+Distributed under the same terms as Vim itself.
 See `:help license`.
