@@ -10,7 +10,7 @@ Plugin list
 
 [surround.vim](https://github.com/tpope/vim-surround)
 
-FZF
+[FZF](https://github.com/junegunn/fzf)
 
 Dependencies
 ------------
