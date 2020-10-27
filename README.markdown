@@ -15,8 +15,6 @@ Plugin list
 Dependencies
 ------------
 
-vim (:-))
-
 python
 
 cmake
