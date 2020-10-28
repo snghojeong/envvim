@@ -54,6 +54,7 @@ Simple guide
 - Next tab: F3
 - Previous tab: F4
 - Surround: See surround.vim guide.
+- Auto complete through tags.
 - And so on... surf my vimrc\_ext file!
 
 My favorites 1. Intellisense
