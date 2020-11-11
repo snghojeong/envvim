@@ -12,14 +12,6 @@ Plugin list
 
 [FZF](https://github.com/junegunn/fzf)
 
-Dependencies
-------------
-
-python
-
-cmake
-
-
 Installation
 ------------
 
