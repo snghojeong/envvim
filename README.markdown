@@ -1,7 +1,7 @@
 envvim
 ============
 
-This is a simple vim environment to develop C/C++ software.
+This is a vim environment for C/C++ programmers.
 
 Plugin list
 ------------
