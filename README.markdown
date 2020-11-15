@@ -3,15 +3,6 @@ envvim
 
 This is a vim environment for C/C++ programmers.
 
-Plugin list
-------------
-
-[NERDTree](https://github.com/scrooloose/nerdtree)
-
-[surround.vim](https://github.com/tpope/vim-surround)
-
-[FZF](https://github.com/junegunn/fzf)
-
 Installation
 ------------
 
