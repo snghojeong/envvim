@@ -12,9 +12,6 @@ Fallow this instructions:
     git clone https://github.com/snghojeong/envvim.git
     cd envvim
     git submodule update --init --recursive
-    cd bundle/YouCompleteMe
-    python install.py --clang-completer
-    cd ~
     mv envvim .vim
     cat "source ~/.vim/vimrc_ext" >> .vimrc
 
