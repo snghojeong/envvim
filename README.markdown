@@ -25,15 +25,6 @@ Prerequisites for CoC:
     Run command ':CocInstall coc-clangd'
     Use 'compile_commands.json'
 
-Simple guide
-------------
-
-- Find file: \ff
-- View directory tree: F9
-- New tab: F2
-- Next tab: F3
-- Previous tab: F4
-
 My favorites 1. Intellisense
 ------------
 
