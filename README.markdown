@@ -11,7 +11,6 @@ Fallow this instructions:
     cd ~
     git clone https://github.com/snghojeong/envvim.git
     cd envvim
-    git submodule update --init --recursive
     mv envvim .vim
     cat "source ~/.vim/vimrc_ext" >> .vimrc
 
