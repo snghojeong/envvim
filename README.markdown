@@ -85,5 +85,5 @@ Try "Ctrl + t" to move the previous tag location.
 License
 -------
 
-Distributed under the same terms as Vim itself.
+Distributed under the same terms as Vim and NeoVIM itself.
 See `:help license`.
