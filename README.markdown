@@ -53,7 +53,7 @@ My vim environment also provides the find tool using interesting plugin named "F
 If you want to find some file, just press '\ff' and you can show the list of files.
 Type the file name that you need and then plugin will shows candidates.
 The most fascinating feature is that the plugin utilize fuzzy algorithm to search file name.
-By doing so, you can pick the file even if you have some mistake to type file name.
+By doing so, you can pick the file even if you have some mistake on file name typed.
 
 My favorites 4. Surround
 ------------
