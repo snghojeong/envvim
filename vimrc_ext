@@ -1,6 +1,8 @@
 set nocompatible
 filetype off
 syntax on
+
+"Read cscope
 if filereadable("cscope.out")
   cs add cscope.out
 endif
