@@ -1,8 +1,3 @@
-envvim
-============
-
-This is a vim environment for C/C++ programmers.
-
 Installation
 ------------
 
