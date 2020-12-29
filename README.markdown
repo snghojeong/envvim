@@ -1,7 +1,7 @@
 Installation
 ------------
 
-Fallow this instructions:
+Fallow the instructions below:
 
     cd ~
     git clone https://github.com/snghojeong/envvim.git
