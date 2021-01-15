@@ -3,7 +3,6 @@ Installation
 
 How to install:
 
-    cd ~
     git clone https://github.com/snghojeong/envvim.git
     cd envvim
     mv envvim .vim
