@@ -8,7 +8,7 @@ How to install(vim):
     mv envvim .vim
     cat "source ~/.vim/vimrc_ext" >> .vimrc
 
-How to install(nvim): TBD
+How to install(nvim)
 
 And when you use cmake to build makefile, give -DCMAKE\_EXPORT\_COMPILE\_COMMANDS=ON option to make compile\_commands.json.
 
