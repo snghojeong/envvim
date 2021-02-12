@@ -12,7 +12,7 @@ How to install(nvim):
 
     git clone https://github.com/snghojeong/envvim.git
     cd envvim
-    mv envvim .vim
+    mv init.vim init.vim
     cat "source ~/.vim/vimrc_ext" >> .vimrc
 
 And when you use cmake to build makefile, give -DCMAKE\_EXPORT\_COMPILE\_COMMANDS=ON option to make compile\_commands.json.
