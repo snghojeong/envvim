@@ -12,7 +12,7 @@ How to install(nvim):
     git clone https://github.com/snghojeong/envvim.git
     cp init.vim ~/.config/nvim/init.vim
 
-And when you use cmake to build makefile, give -DCMAKE\_EXPORT\_COMPILE\_COMMANDS=ON option to make compile\_commands.json.
+And when you using cmake to build makefile, give -DCMAKE\_EXPORT\_COMPILE\_COMMANDS=ON option to make compile\_commands.json.
 
 Prerequisites for CoC:
 
