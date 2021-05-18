@@ -2,3 +2,4 @@ bundle/*
 plugged/*
 *.swp
 build
+*.build
