@@ -1,12 +1,6 @@
 Installation
 ------------
 
-How to install(vim):
-
-    git clone https://github.com/snghojeong/envvim.git
-    cd envvim
-    cat "source ~/.vim/vimrc_ext" >> .vimrc
-
 How to install(nvim):
 
     git clone https://github.com/snghojeong/envvim.git
