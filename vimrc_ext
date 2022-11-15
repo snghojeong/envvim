@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 syntax on
 
-"Read cscope.out file
+"Read cscope.out and ctags file
 if filereadable("cscope.out")
   cs add cscope.out
 endif
