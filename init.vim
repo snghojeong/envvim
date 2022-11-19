@@ -12,7 +12,7 @@ endif
 syntax enable
 
 "fold
-"set foldmethod=syntax
+set foldmethod=syntax
 "set foldnestmax=1
 
 "vim-plug
