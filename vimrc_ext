@@ -15,7 +15,6 @@ endif
 
 "fold
 set foldmethod=syntax
-set foldnestmax=1
 
 "Plug
 call plug#begin('~/.vim/plugged')
