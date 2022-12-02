@@ -13,7 +13,7 @@ syntax enable
 
 "fold
 set foldmethod=syntax
-"set foldnestmax=1
+set nofoldenable
 
 "vim-plug
 call plug#begin('~/.vim/plugged')
