@@ -44,8 +44,6 @@ map <F3> :tabprev<CR>
 map <F4> :tabnext<CR>
 nnoremap <silent> <F9> :NERDTreeFind <CR>
 map <F10> :TlistToggle <CR>
-nnoremap <leader>dc :YcmCompleter GoToDeclaration<CR>
-nnoremap <leader>df :YcmCompleter GoToDefinition<CR>
 nnoremap cw :cw<CR>
 nnoremap cn :cn<CR>
 nnoremap cp :cp<CR>
