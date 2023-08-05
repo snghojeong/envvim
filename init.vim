@@ -38,6 +38,11 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+"Copy to clipboard 'Y'
+nnoremap Y "+y
+vnoremap Y "+y
+nnoremap yY ^"+y$
+
 "hot key - function key
 map <F2> :tabnew<CR>
 map <F3> :tabprev<CR>
