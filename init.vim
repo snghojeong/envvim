@@ -25,9 +25,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/taglist.vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-colorscheme desert
+colorscheme gruvbox
 set nowrap
 set ignorecase
 set nohlsearch
