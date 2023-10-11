@@ -13,7 +13,7 @@ Prerequisites for CoC:
     Install node.js
     Install yarn
     Install clangd (Mac: brew install llvm)
-    Run command ':CocInstall coc-clangd'
+    Run command ':CocInstall coc-tsserver coc-json coc-clangd coc-rust-analyzer'
     Use 'compile_commands.json'
 
 My favorites 1. Intellisense
