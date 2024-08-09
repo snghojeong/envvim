@@ -1,15 +1,15 @@
 Installation
 ------------
 
-How to install(nvim):
-
-    git clone https://github.com/snghojeong/envvim.git
-    cp init.vim ~/.config/nvim/init.vim
-
-And then install vim-plug ( https://github.com/junegunn/vim-plug )
+First, install vim-plug ( https://github.com/junegunn/vim-plug )
 
     sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+       
+And then, install init.vim(nvim):
+
+    git clone https://github.com/snghojeong/envvim.git
+    cp init.vim ~/.config/nvim/init.vim
 
 And when you using cmake to build makefile, give -DCMAKE\_EXPORT\_COMPILE\_COMMANDS=ON option to make compile\_commands.json.
 
