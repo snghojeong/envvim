@@ -29,7 +29,7 @@ set ignorecase
 set nohlsearch
 set number
 
-"Auto indent
+"Auto indent settings 
 set expandtab
 set shiftwidth=4
 set softtabstop=4
