@@ -1,7 +1,83 @@
-"Read ctags file
+function! SetupCtags()
+  " Run ctags -R in the background
+  call jobstart('ctags -R --exclude=.git --exclude=jquery.js --exclude=jquery.min.js --exclude=lunr.min.js', {
+        \ 'on_stdout': function('s:OnCtagsComplete'),
+        \ 'on_stderr': function('s:OnCtagsError'),
+        \ 'on_exit': function('s:OnCtagsExit')
+        \ })
+endfunction
+
+function! s:OnCtagsComplete(job_id, data, event)
+  if empty(a:data)
+    return
+  endif
+  call luaeval('vim.notify("ctags -R completed successfully.", vim.log.levels.INFO)')
+endfunction
+
+function! s:OnCtagsError(job_id, data, event)
+  " Check if the data is not empty
+  if !empty(a:data) && a:data[0] != ''
+    " Construct a detailed error message
+    let l:error_message = 'Error running ctags: ' . join(a:data, "\n")
+    let l:details = 'Job ID: ' . a:job_id . ', Event: ' . a:event
+    call luaeval('vim.notify(_A[1] .. "\n" .. _A[2], vim.log.levels.ERROR)', [l:error_message, l:details])
+  endif
+endfunction
+
+function! s:OnCtagsExit(job_id, data, event)
+  " Check if ./vim.build directory exists, if not, create it
+  call jobstart('mkdir -p ./vim.build', {
+        \ 'on_exit': function('s:OnMkdirComplete')
+        \ })
+endfunction
+
+function! s:OnMkdirComplete(job_id, data, event)
+  if a:data[0] == 0
+    call luaeval('vim.notify("Directory ./vim.build created or already exists.", vim.log.levels.INFO)')
+  else
+    call luaeval('vim.notify("Failed to create directory ./vim.build.", vim.log.levels.ERROR)')
+  endif
+
+  " Move tags file to ./vim.build directory in the background
+  call jobstart('mv tags ./vim.build', {
+        \ 'on_exit': function('s:OnMoveComplete')
+        \ })
+endfunction
+
+function! s:OnMoveComplete(job_id, data, event)
+  if a:data[0] == 0
+    call luaeval('vim.notify("Tags moved to ./vim.build successfully.", vim.log.levels.INFO)')
+    if filereadable("vim.build/tags")
+      set tags=vim.build/tags
+    endif
+  else
+    call luaeval('vim.notify("Failed to move tags.", vim.log.levels.ERROR)')
+  endif
+endfunction
+
+" Check if the current directory name contains "planet-"
+autocmd VimEnter * if stridx(getcwd(), 'planet-') != -1 | call SetupCtags() | endif
+
 if filereadable("vim.build/tags")
-  set tags=vim.build/tags
+    set tags=vim.build/tags
 endif
+
+" Enable list mode to show whitespace characters
+set list
+
+" Configure listchars to show LF and CRLF differently
+set listchars=eol:↴,trail:·,extends:>,precedes:<,space:·
+
+" Optionally, you can define a different symbol for CRLF
+" This requires a bit of trickery since listchars does not directly support CRLF
+" You can use a custom function to highlight CRLF lines
+function! HighlightCRLF()
+  " Highlight CRLF lines with a specific symbol
+  match ErrorMsg '\r$'
+endfunction
+
+" Call the function on BufRead and BufWrite events
+autocmd BufRead,BufWritePost * call HighlightCRLF()
 
 "syntax hilight
 syntax enable
@@ -56,6 +132,11 @@ let NERDTreeAutoDeleteBuffer = 1
 
 "FZF
 filetype plugin on
+if executable('fd')
+  let $FZF_DEFAULT_COMMAND = 'fd --type f --hidden --follow --exclude .git --exclude .cache'
+else
+  autocmd VimEnter * echohl WarningMsg | echom "[FZF] 'fd' not found: fzf will fall back to slow 'find'" | echohl None
+endif
 map <leader>ff :FZF<CR>
 
 "CoC
